@@ -3,11 +3,11 @@ var playlist = {
 };
 
 function updatePlaylist(playlist, artist, song) {
-  playlist.artist = song;
-  return object;
+  playlist[artist] = song;
+  return playlist;
 }
 
 function removeFromPlaylist(playlist, artist) {
-  delete object.artist;
-  return object;
+  delete playlist.artist;
+  return playlist;
 }
